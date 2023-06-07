@@ -5,7 +5,7 @@
     session_start();
     // $sql = "SELECT * FROM users order by u_id desc";
     // $query = mysqli_query($db, $sql);
-    if (strlen($_SESSION['user_id']) == 2) {
+    if (strlen($_SESSION['user_id']) == 3) {
         // header('location:order_update.php');
         header('location:../login.php');
     } else {

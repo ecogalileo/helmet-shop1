@@ -48,7 +48,7 @@ session_start();
                 <div class="navbar-header">
                     <a class="navbar-brand" href="dashboard.php">
 
-                        <span><img src="images/armor_t3ch.png" alt="homepage" class="dark-logo" /></span>
+                        <span><img src="images/armor_t3ch.png" alt="homepage" class="dark-logo" width="50%" /></span>
                     </a>
                 </div>
                 <div class="navbar-collapse">
