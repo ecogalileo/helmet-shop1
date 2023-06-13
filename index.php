@@ -37,7 +37,7 @@ session_start();
                     <ul class="nav navbar-nav">
                         <li class="nav-item"> <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a> </li>
                         <li class="nav-item"> <a class="nav-link active" href="about-us.php">About-us <span class="sr-only"></span></a> </li>
-                        <li class="nav-item"> <a class="nav-link active" href="index.php">Contact-us <span class="sr-only"></span></a> </li>
+                        <li class="nav-item"> <a class="nav-link active" href="contact-us.php">Contact-us <span class="sr-only"></span></a> </li>
                         <li class="nav-item"> <a class="nav-link active" href="helmets.php">Helmets <span class="sr-only"></span></a> </li>
 
 
