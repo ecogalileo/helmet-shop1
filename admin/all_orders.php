@@ -20,6 +20,14 @@ session_start();
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+    <script>
+$(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+    </script>
 
 
 
@@ -40,7 +48,7 @@ session_start();
                 <div class="navbar-header">
                     <a class="navbar-brand" href="dashboard.php">
 
-                        <span><img src="images/armor_t3ch.png" alt="homepage" class="dark-logo" width="50%"/></span>
+                        <span><img src="images/armor_t3ch.png" alt="homepage" class="dark-logo" width="50%" /></span>
                     </a>
                 </div>
                 <div class="navbar-collapse">
@@ -120,7 +128,7 @@ session_start();
 
                                 <div class="table-responsive m-t-40">
                                     <table id="myTable" class="table table-bordered table-striped">
-                                        <thead class="thead-dark">
+                                        <thead class="thead-dark bg-dark">
                                             <tr>
                                                 <th>User</th>
                                                 <th>Title</th>
@@ -155,7 +163,7 @@ session_start();
                                                     $status = $rows['status'];
                                                     if ($status == "" or $status == "NULL") {
                                                     ?>
-                                                        <td> <button type="button" class="btn btn-info"><span class="fa fa-bars" aria-hidden="true"></span> Dispatch</button></td>
+                                                        <td> <button type="button" class="btn btn-info"><span class="fa fa-bars" aria-hidden="true"></span> Pending</button></td>
                                                     <?php
                                                     }
                                                     if ($status == "in process") { ?>
@@ -184,8 +192,8 @@ session_start();
                                                     echo '<a href="view_order.php?user_upd=' . $rows['o_id'] . '" " class="btn btn-info btn-flat btn-addon btn-sm m-b-10 m-l-5"><i class="fa fa-edit"></i></a>
                                                             </td>
                                                             </tr>';
-                                                        }
-                                                    }
+                                                }
+                                            }
                                                 ?>
                                         </tbody>
                                     </table>
@@ -208,7 +216,6 @@ session_start();
 
     </div>
 
-
     <script src="js/lib/jquery/jquery.min.js"></script>
     <script src="js/lib/bootstrap/js/popper.min.js"></script>
     <script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
@@ -224,6 +231,8 @@ session_start();
     <script src="js/lib/datatables/cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
     <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
     <script src="js/lib/datatables/cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+
+
 
 </body>
 
